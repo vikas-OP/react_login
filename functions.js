@@ -68,7 +68,7 @@ function handleServerError(res){
 }
 
 function sendMail(email, randomString){
-    const randomUrl =  `http://localhost:3000/reset-password/${randomString}`
+    const randomUrl =  `https://react-loginform-vikas.netlify.app/reset-password/${randomString}`
     let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
